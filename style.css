@@ -20,18 +20,31 @@ nav {
 }
 
 div {
+  position: relative;
   padding: 5px 5px 0px 5px;
   border: 2px solid #8aadf4;
   border-radius: 20px;
   color: #8aadf4;
 }
 
-div p {
-    padding: 0px 5px 0px 5px;
+div a {
+  padding: 0px 5px 0px 5px;
   display: inline;
+  text-decoration: none;
+  color: #8aadf4;
 }
 
 .selected {
   border: 2px solid #8aadf4;
   border-radius: 20px;
+}
+
+.highlight {
+  position: absolute;
+  border: 2px solid #8aadf4;
+  border-radius: 20px;
+  height: 20px;
+  width: 50px;
+  top: 11%;
+  left: 5px;
 }
