@@ -1,20 +1,19 @@
-const nav = document.querySelector('.nav-container');
-const links = document.querySelectorAll ('.nav-link');
-const highlight = document.querySelector('.highlight');
+const nav = document.querySelector(".nav-container");
+const links = document.querySelectorAll(".nav-link");
+const highlight = document.querySelector(".highlight");
 
 function moveHighlight(el) {
-    highlight.style.width = `${el.offsetWidth}px`;
-    highlight.style.left = `${el.offsetLeft}px`;
+  highlight.style.width = `${el.offsetWidth}px`;
+  highlight.style.left = `${el.offsetLeft}px`;
 }
 
-const activeLink = document.querySelector('.nav-link.active');
+const activeLink = document.querySelector(".nav-link.active");
 if (activeLink) moveHighlight(activeLink);
 
-links.forEach(link => {
+links.forEach((link) => {
+  link.addEventListener("mouseenter", () => moveHighlight(link));
 
-    link.addEventListener('mouseenter', () => moveHighlight(link));
-
-    nav.addEventListener('mouseleave', () => {
-        if (activeLink) moveHighlight(activeLink);
-    });
+  nav.addEventListener("mouseleave", () => {
+    if (activeLink) moveHighlight(activeLink);
+  });
 });
