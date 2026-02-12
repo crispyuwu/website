@@ -48,5 +48,4 @@ else if (ua.includes("opr") || ua.includes("opera")) browser = "Opera";
 else if (ua.includes("chrome")) browser = "Chrome";
 else if (ua.includes("safari")) browser = "Safari";
 
-// Put it in your line here:
 agentElement.textContent = `${browser}`;
