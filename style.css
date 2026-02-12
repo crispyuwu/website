@@ -54,13 +54,22 @@ nav.nav-container div {
   position: relative;
 }
 
-#fastfetch {
+#fastfetch-container {
   position: absolute;
   width: 550px;
   height: 300px;
   top: 100px;
-  left: 20%;
+  left: calc(50% - 30%);
   background-color: #181926;
   border-radius: 10px;
   border: 2px solid #8aadf4;
+}
+
+#fastfetch-p {
+  white-space: pre;
+  line-height: 0.7em;
+  color: #8aadf4;
+  position: relative;
+  top: 20px;
+  left: 10px;
 }
