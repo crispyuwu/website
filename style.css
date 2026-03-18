@@ -52,6 +52,7 @@ nav.nav-container div {
 
 .windows {
   position: relative;
+  color: #8aadf4;
 }
 
 #fastfetch-container {
@@ -72,4 +73,19 @@ nav.nav-container div {
   position: relative;
   top: 20px;
   left: 10px;
+}
+
+#about {
+  position: absolute;
+  width: 550px;
+  height: 300px;
+  top: 500px;
+  right: calc(50% - 30%);
+  background-color: #181926;
+  border-radius: 10px;
+  border: 2px solid #8aadf4;
+}
+
+#about p {
+  text-align: center;
 }
